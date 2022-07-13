@@ -34,10 +34,23 @@ Php 8+ BaseAPI, 2 public methods: 1. GET (generates uuid and saves to database),
 6. Нажать "Choose Files", выбрать файл "db_backup.sql", нажать "Execute"
 7. Готово, адрес API http://127.0.0.1:81/
 
-# Авто-тестирование:
+# Авто-тестирование (Если Docker установлен на Windows или MacOS):
 Для автоматического тестирования выполните в консоли следующие команды:
 ```
 docker exec -it apiid-php-1 bash
+```
+```
+chmod 711 ./vendor/bin/phpunit
+```
+```
+php ./vendor/bin/phpunit ./tests/TestRequest.php
+```
+
+
+# Авто-тестирование (Если Docker установлен на Linux):
+Для автоматического тестирования выполните в консоли следующие команды:
+```
+docker exec -it apiid_php_1 bash
 ```
 ```
 chmod 711 ./vendor/bin/phpunit
