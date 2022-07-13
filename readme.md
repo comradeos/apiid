@@ -6,13 +6,22 @@ Php 8+ BaseAPI, 2 public methods: 1. GET (generates uuid and saves to database),
 2. Открыть консоль, выполнить команды:  
    ```
    git clone https://github.com/comradeos/apiid.git
+   ```
+   
+   ```
    cd apiid
+   ```
+   
+   ```
    docker-compose up --build    
    ```
+   
    Дождаться сборки и запуска проекта, о завершении процессов может свидетельствовать строчка:  
+   
    ```
    apiid-db-1 | 2022-07-13T21:45:40.686547Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.29'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
    ``` 
+
 4. В браузере перейти по адресу http://127.0.0.1:82/ и выполнить вход:  
    ```
    System: MySQL  
@@ -29,7 +38,11 @@ Php 8+ BaseAPI, 2 public methods: 1. GET (generates uuid and saves to database),
 Для автоматического тестирования выполните в консоли следующие команды:
 ```
 docker exec -it apiid-php-1 bash
+```
+```
 chmod 711 ./vendor/bin/phpunit
+```
+```
 php ./vendor/bin/phpunit ./tests/TestRequest.php
 ```
 
