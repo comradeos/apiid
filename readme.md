@@ -17,9 +17,9 @@ Php 8+ BaseAPI, 2 public methods: 1. GET (generates uuid and saves to database),
 
 # Авто-тестирование:
 Для автоматического тестирования выполните в консоли следующие команды:
-1.  docker exec -it apiid-php-1 bash
+1. docker exec -it apiid-php-1 bash
 2. chmod 711 ./vendor/bin/phpunit
-3. ./vendor/bin/phpunit ./tests/TestRequest.php
+3. php ./vendor/bin/phpunit ./tests/TestRequest.php
 
 
 
