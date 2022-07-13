@@ -56,8 +56,9 @@ chmod 711 ./vendor/bin/phpunit
 ```
 php ./vendor/bin/phpunit ./tests/TestRequest.php
 ```
-
-
+# Ручное-тестирование:
+Находятся во временном файле  
+http://127.0.0.1:81/temp/requests.php
 
 
 
