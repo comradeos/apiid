@@ -4,3 +4,7 @@ php composer.phar require robmorgan/phinx
 vendor/bin/phinx
 alias phinx="vendor/bin/phinx"
 
+phinx create ApiTestMigration
+phinx migrate -e development
+phinx rollback -e development
+phinx status -e development

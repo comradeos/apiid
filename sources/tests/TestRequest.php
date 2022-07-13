@@ -13,7 +13,7 @@ class TestRequest extends TestCase
     {
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_HEADER => 1,
             CURLOPT_NOBODY => 1,
             CURLOPT_RETURNTRANSFER => 1,
@@ -39,7 +39,7 @@ class TestRequest extends TestCase
 
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => $data,
@@ -64,7 +64,7 @@ class TestRequest extends TestCase
 
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => $data,
@@ -89,7 +89,7 @@ class TestRequest extends TestCase
 
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => $data,
@@ -118,7 +118,7 @@ class TestRequest extends TestCase
     
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => $data,
@@ -149,7 +149,7 @@ class TestRequest extends TestCase
     
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => $data,
@@ -168,7 +168,7 @@ class TestRequest extends TestCase
 
     /**
      * Проверка получения post запросом количества сгенерированных uuid
-     * за указанный период времени, которых сформирован неправильно
+     * за указанный период времени, который сформирован неправильно
      */    
     public function test_get_number_of_generated_uuids_invalid()
     {
@@ -181,7 +181,7 @@ class TestRequest extends TestCase
     
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => $data,
@@ -213,7 +213,7 @@ class TestRequest extends TestCase
     
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => $data,
@@ -245,7 +245,7 @@ class TestRequest extends TestCase
     
         $curl = curl_init();
         $options = [
-            CURLOPT_URL => "http://127.0.0.1:80/api.php",
+            CURLOPT_URL => "http://127.0.0.1:80/",
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_POST => 1,
             CURLOPT_POSTFIELDS => $data,
