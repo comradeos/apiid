@@ -47,7 +47,6 @@ chmod 711 ./vendor/bin/phpunit
 php ./vendor/bin/phpunit ./tests/TestRequest.php
 ```
 ### Если Docker установлен на Linux:
-Для автоматического тестирования выполните в консоли следующие команды:
 ```
 docker exec -it apiid_php_1 bash
 ```
