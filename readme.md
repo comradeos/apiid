@@ -48,7 +48,7 @@ php ./vendor/bin/phpunit ./tests/TestRequest.php
 ```
 ### Если Docker установлен на Linux:
 ```
-docker exec -it apiid_php_1 bash
+sudo docker exec -it apiid_php_1 bash
 ```
 ```
 chmod 711 ./vendor/bin/phpunit
