@@ -31,7 +31,7 @@ Php 8+ BaseAPI, 2 public methods: 1. GET (generates uuid and saves to database),
    Database: оставить пустым  
    ```
 5. В браузере перейти по адресу http://127.0.0.1:82/?server=db&username=root&import=
-6. Нажать "Choose Files", выбрать файл "db_backup.sql", нажать "Execute"
+6. Нажать "Choose Files", выбрать файл "db_backup.sql" (находится в папке "sources"), нажать "Execute"
 7. Готово, адрес API http://127.0.0.1:81/
 
 # Авто-тестирование:
