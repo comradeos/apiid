@@ -1,5 +1,15 @@
 # APIid
-Php 8+ BaseAPI, 2 public methods: 1. GET (generates uuid and saves to database), 2. POST (get uuid by id), 1 private POST (get statistics by time period, secret http header protected)
+### Задание
+```
+Написать базовое API на php 8+ (входящие параметры POST, ответ json)
+
+2 публичных метода
+
+GET метод Генерация uuid с сохранением в базу. Ответ апи метода: uuid и его сгенерированный id
+POST Получение uuid по его id
+1 закрытый метод POST (по секретному http заголовку) - получение статистики сгенерированных uuid за период
+для миграций в базу удобно использовать robmorgan/phinx
+```
 
 # Инструкция:
 1. Установить Docker https://docs.docker.com/get-docker/
