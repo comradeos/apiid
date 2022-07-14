@@ -43,14 +43,14 @@ POST Получение uuid по его id
 5. В браузере перейти по адресу http://127.0.0.1:82/?server=db&username=root&import=
 6. Нажать "Choose Files", выбрать файл "db_backup.sql" (находится в папке "sources"), нажать "Execute"
 7. Для создания новой базы данных, создать пустую бд с именем "apiid_db" и выполнить миграции:
-   ### Для Docker на Windows/Mac  
+   ### Если Docker установлен на Windows/Mac:
    ```
    docker exec -it apiid-php-1 bash
    ```
    ```
    php ./vendor/bin/phinx migrate
    ```
-   ### Для Docker на Linux
+   ### Если Docker установлен на Linux:
    ```
    sudo docker exec -it apiid_php_1 bash
    ```
@@ -61,7 +61,7 @@ POST Получение uuid по его id
 8. Готово, адрес API http://127.0.0.1:81/
 
 # Авто-тестирование:
-### Если Docker установлен на Windows/MacOS:
+### Если Docker установлен на Windows/Mac:
 Для автоматического тестирования выполните в консоли следующие команды:
 ```
 docker exec -it apiid-php-1 bash
