@@ -32,7 +32,7 @@ POST Получение uuid по его id
    apiid-db-1 | 2022-07-13T21:45:40.686547Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.29'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
    ``` 
 
-4. В браузере перейти по адресу http://127.0.0.1:82/ и выполнить вход:  
+4. Для импорта базы данных в браузере перейти по адресу http://127.0.0.1:82/ и выполнить вход:  
    ```
    System: MySQL  
    Server: db  
@@ -42,10 +42,26 @@ POST Получение uuid по его id
    ```
 5. В браузере перейти по адресу http://127.0.0.1:82/?server=db&username=root&import=
 6. Нажать "Choose Files", выбрать файл "db_backup.sql" (находится в папке "sources"), нажать "Execute"
-7. Готово, адрес API http://127.0.0.1:81/
+7. Для создания новой базы данных, создать пустую бд с именем "apiid_db" и выполнить миграции:
+   ### Для Docker на Windows/Mac  
+   ```
+   docker exec -it apiid-php-1 bash
+   ```
+   ```
+   php ./vendor/bin/phinx migrate
+   ```
+   ### Для Docker на Linux
+   ```
+   sudo docker exec -it apiid_php_1 bash
+   ```
+   ```
+   php ./vendor/bin/phinx migrate
+   ```
+
+8. Готово, адрес API http://127.0.0.1:81/
 
 # Авто-тестирование:
-### Если Docker установлен на Windows или MacOS:
+### Если Docker установлен на Windows/MacOS:
 Для автоматического тестирования выполните в консоли следующие команды:
 ```
 docker exec -it apiid-php-1 bash

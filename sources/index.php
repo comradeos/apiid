@@ -10,7 +10,8 @@ class BaseAPI
         try {
             $this->db = new PDO("mysql:host=db;dbname=apiid_db", "root", "root");
         } catch (\Throwable $error) {
-            die("Connection error: $error");
+            // die($error);
+            die("Database connection error");
         }
     }
 
